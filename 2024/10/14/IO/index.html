@@ -1,0 +1,1116 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="一些经验, 记录记录">
+    <meta name="description" content="实践是检验真理的唯一标准">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>一些经验 | 记录记录</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">记录记录</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">记录记录</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/chris2ease/chris2ease.github.io" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/chris2ease/chris2ease.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/Apple.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">一些经验</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                                <span class="chip bg-color">记录</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%A2%8E%E7%89%87/" class="post-category">
+                                碎片
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2024-10-14
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>此学期survive后固定的课时只剩信息工程伦理和编译原理实践了 131&#x2F;152 黎明前的曙光 目前缺少自由支配时间</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/work.png" alt="相册被数据库和计算机系统占领"><br>IO操作慢的实际体验：1000道题目分开存放，遍历输入大模型，输出到1000个文件中，非常慢，应该将1000道题目放在一个文件中，将这个文件传入大模型，让它输出到一个文件中，之后可以根据需求将输出分割开来</p>
+<p>DSSM计算文本相似度的模型广泛应用在商业广告的推荐算法上</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/Internet.png" alt="计算机网络本是为了方便信息共享而设计的，能跑通就行"></p>
+<p>起心动念 慎之又慎    </p>
+<p>炉石为每一个账户编好了开包所得的稀有度序列，没有因果，全是安排，想到休谟</p>
+<p>steam国庆新规，cs武器交易7日后才可出售，难怪比例掉到0.65，卖家出手是真的快，原本打算冲寂静岭的，烂库存了，buff比例逐日走低，成功接盘了</p>
+<p>M4请擦擦崭新出厂单价波动变化：</p>
+<img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/pricetrend.png" alt="完了" style="zoom:33%;" />
+
+<p>期待，购买，游玩，失望，卸载，退款</p>
+<p>寂静岭2重制版的战斗手感不如生化危机 不过恐怖氛围优于同类竞品 音乐非常棒</p>
+<p> James的忧郁矛盾气质做的很好 但是优化太糟糕了 且锁国区 转区后使用其他支付方式用港币支付才能使钱包余额转换为港币 且3个月内无法再次转区  500大洋冻结3个月  426有点贵了 生化4RE不过198（24&#x2F;10&#x2F;31史低99），博门3不过298，科乐美卖个情怀，老玩家恐怕是无脑入，但游戏首先要好玩，它的战斗系统非常一般 人物动作比较僵硬 且PC无法流畅运行 新游戏老显卡带不动可以理解 但是3050ti全低画质才20-30帧很不合理 尽管缺点不少，但它的游戏氛围绝对值得这个价位，可惜无法流畅游玩<br><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/SH2.png" alt="letter的空灵氛围加上阳台门打开吹入的10月秋风，萧瑟，超有感觉，通天了要"></p>
+<p>购买寂静岭2RE的整个过程费时间费钱费精力， 并不是合适的时机，一厢情愿了</p>
+<p>也算是一次从头失败到尾的尝试，算是失败地非常成功</p>
+<p>建梁安利的Gorogoa太棒了，超有想象力的游戏，视角的跳跃嵌套，万花筒轮回，对不可名状之物的窥视，穷尽一生寻找答案，打开脑洞的2个小时</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/G.png" alt="有东方龙的感觉"></p>
+<p>奥林匹斯山做好了，普罗米修斯很帅，伤害很高，但是初见杀</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/P.jpg" alt="前胸的疤痕对应鹰啄内脏的神话，完美的身材"></p>
+<p>EPIC vengeance saga的战力出大问题，奥德修斯怒叉波塞冬，倒反天罡了</p>
+<p>运行出错</p>
+<p>Illegal char at index 0:  &#x2F;mnt&#x2F;workspace2&#x2F;zy&#x2F;try.py</p>
+<p>是因为没有正确配置运行调试的解释器</p>
+<p>sft可以跑，dpo遇到点问题，感谢宇洋哥</p>
+<img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/K.jpg" alt="浮雕实体卡太棒了" style="zoom: 20%;" />
+
+<p>深暗领域 科幻题材+奇幻题材 星际+魔兽 非常成功的一个版本 暴雪把魔戒和星战的元素组合起来再加上 德莱尼三杰的背景故事 太有故事可讲了 卡牌效果符合人物设定 维伦仁爱，慈悲，隐忍（盾+回响所有德莱尼效果&#x3D;无限之墙） 基尔加丹果敢狡诈 燃烧军团的HR（军团传送门 &#x3D; 无疲劳 + 大恶魔战场），两位身材都是777，一攻一守，蛋总任务三阶段是关闭传送门，最终打开的传送门无限减费，无限墙+无限资源+无限减费，好玩</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/Draenei.png" alt="维伦开门"></p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/JW.png" alt="加王子可防快攻"></p>
+<p>除了基本的物理定律和生物习性外没有什么是定死的</p>
+<p>库维兹自称为world-builder，很妙的一个称谓，抓住了艺术创作的本质，接近神明</p>
+<img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/M.jpg" alt="天地塔罗的风格好看，且构图基于经典维特塔罗" style="zoom:25%;" />
+
+<p>把精神物质化就是很棒的事情，塔罗牌的牌灵是魔术师，连接天地</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/domino.png" alt="炉石多米诺"></p>
+<video width="800" height="500" controls>
+  <source src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/domino.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p>双十一没有支出，记得在放假（特别是暑假）前收回衣服，不然会被阳光吃掉（方言博大精深，可爱又贴切）</p>
+<p>卧推时大臂和躯干夹角60度为佳，最低位可内旋，90度训练效率低，省力了，慢慢改正，重新训练，本学期已无体育打卡，无活动课，久坐不动实在不好</p>
+<p><strong>JUICE WRLD</strong>因为X和peep的意外离世写过legends，结果一语成谶，歌写的是真好，可惜，优秀的rapper们主打一个天赋和真实，我国的rapper是非常奇怪的，没有人家的土壤是结不出人家的果子的，Kendrick Lamar很屌</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/J.png" alt="R.I.P"></p>
+<p>大选川普赢了，蛮好的，川普有人格魅力，和马斯克关系也好，Elon是人类的科技之光，是做实事的，前沿科技应该得到自由的发展，斥巨资助特朗普参选，英雄相惜，相互成就</p>
+<p>萝莉岛，库布里克，迈克尔杰克逊，共济会，阴谋论……权贵背后多少脏东西，恋童，也不是什么秘密了，只是占有话语权的始终不是大多数，很无奈，傀儡政府和草台班子，娱乐圈是幕后人物用来转移注意力的，没实际能量的，这么多所谓的明星支持民主党…….都知道娱乐圈乱，这下是真爆了</p>
+<p>马斯克真是全力助川普入主白宫了，购入X是为长远考虑，获取公共话语权，科技的力量，基层人民的力量，白大拿也站川普，好好好</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1LTDNY3Eqo?buvid=XYB1546B6A17861D11FB5F1E1685C9C684C10&from_spmid=main.space-contribution.0.0&is_story_h5=false&mid=WhLn3VPZuikGQTA7GDb5sg==&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=2476c4ac-37c6-4dec-ae3e-776b1e2e5788&share_source=COPY&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1730965266&unique_k=dQ3LN1J&up_id=478640137&vd_source=13bed1f16180092533399cebea809bec">世界第一辅助诞生！一己之力VS全美明星阵容！致敬传奇梭哈王与护国公_哔哩哔哩_bilibili</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZoD3YcEFH/?spm_id_from=333.1073.top_right_bar_window_history.content.click&vd_source=13bed1f16180092533399cebea809bec">【双语】川普胜选时刻，马斯克讲述如何在摇摆州助选_哔哩哔哩_bilibili</a></p>
+<p>川普遇刺不死真是吉人天相，是个真诚，有信仰的人，和MJ是挚交，真正的传奇，疫情时冲白宫的号召力是真正的能量，真的是有人愿意为他卖命的，这是非常关键的。</p>
+<img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/T.jpg" alt="历史书上会有它的" style="zoom:50%;" />
+
+<p>美区的APPLE ID可以用美区的支付宝冲礼品卡的余额，尝试用Paypal买Udemy course</p>
+<p>生成式的游戏交互要部署大模型 R星可以在GTA6里试着加MOD 企鹅人远超预期 双十一完结</p>
+<p>海蒂克拉拉太可爱了，童话故事就是很容易让人开心</p>
+<p>DDOS僵尸网络的攻击和天灾军团很像</p>
+<p>2024&#x2F;11&#x2F;17 UFC-309 42岁的”火警“斯蒂普-米欧奇退役   </p>
+<p>骨头也该退了  这场赢的并不光彩 骨头对于主持提出的Tom冠军挑战赛避而不谈，继续赖着腰带    </p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/1117ufc.png" alt="就你一张照片能挂个10年"> </p>
+<p>还是奥利维拉和钱德勒的联合主赛round 5精彩，期待萨鲁基安和马哈切夫以及之后奥的冠军战</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/OV.png" alt="精彩！"></p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/jones.png" alt="人精张宝忠Jon&quot;Bone&quot;Jones">                                                           </p>
+<p>可比性很重要，比较根本不在一个范式中的事物是毫无意义的，元组和数值无法比较</p>
+<p>准备期中考</p>
+<p>乐享浦东优惠挺大，但新白鹿的照牌菜食之无味弃之可惜，不如前菜的牛羊肉</p>
+<img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/DBL.png" alt="小林 都柏林人 译文" style="zoom:25%;" />
+
+<p>康纳是都柏林人哦</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/Conor.png" alt="想成为梵高的年轻人"></p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/KING.png" alt="疯王有名，其名Conor McGregor"></p>
+<p>药把康纳毁了，再回不去了</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d2tPeNESw/?spm_id_from=333.337.search-card.all.click&vd_source=13bed1f16180092533399cebea809bec">【格斗与抽象の顶点！】为什么你需要去看ufc：嘴炮康纳小传_哔哩哔哩_bilibili</a></p>
+<p>终于！</p>
+<p><img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/IO/BlackTemple.png" alt="人终被年少时不可得之物困其一生"></p>
+<p>《都柏林人》+ 黑暗神殿幸运币 21岁纪念 , 分卡开包结束已是28号凌晨</p>
+<p>看论文很简单，讲论文也不难，但只有做过相关实验才知道作者某些看似不起眼的做法是多么重要，做实验难，写论文不容易，中会议更难，一步步来吧</p>
+<p>得找机会出门走走，太宅了！</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">chris2ease</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://chris2ease.github.io/2024/10/14/IO/">https://chris2ease.github.io/2024/10/14/IO/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">chris2ease</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                                    <span class="chip bg-color">记录</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2025/02/01/2025/">
+                    <div class="card-image">
+                        
+                        <img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/2025/firework.png" class="responsive-img" alt="新年快乐">
+                        
+                        <span class="card-title">新年快乐</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            age=random.randint(21,23)
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-02-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A2%8E%E7%89%87/" class="post-category">
+                                    碎片
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%8A%82%E6%97%A5/">
+                        <span class="chip bg-color">节日</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/09/19/Nostalgic/">
+                    <div class="card-image">
+                        
+                        <img src="https://chris2ease-1324337338.cos.ap-shanghai.myqcloud.com/Nostalgic/SSF.png" class="responsive-img" alt="照旧">
+                        
+                        <span class="card-title">照旧</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            世界是离散的 精神把物质联系起来
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-09-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A2%8E%E7%89%87/" class="post-category">
+                                    碎片
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                        <span class="chip bg-color">记录</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="9495473687"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2026</span>
+            
+            <a href="/about" target="_blank">chris2ease</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            <br>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/chris2ease" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2930459048@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2930459048" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2930459048" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+    
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
